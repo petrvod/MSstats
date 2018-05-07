@@ -252,21 +252,22 @@ dataProcessPlots <- function(data=data,
             			        legend.text=element_text(size=legend.size)) +
             			    guides(color=guide_legend(title=paste("# peptide:", nlevels(sub$PEPTIDE)), 
             			                            title.theme = element_text(size=13, angle=0),
+            			                            keywidth=0.5,
+            			                            keyheight = 0.1,
+            			                            default.unit = 'inch',
+            			                            ncol=3, order = 1),
+            			         linetype=guide_legend(title=paste("# peptide:", nlevels(sub$PEPTIDE)), 
+            			                               title.theme = element_text(size=13, angle=0),
+            			                               keywidth=0.5,
+            			                               keyheight = 0.1,
+            			                               default.unit = 'inch',
+            			                               ncol=3, order = 1),
+            			         shape=guide_legend(title=NULL,
+            			                            label.theme = element_text(size=legend.size, angle=0),
             			                            keywidth=0.1,
             			                            keyheight = 0.1,
             			                            default.unit = 'inch',
-            			                            ncol=3),
-            			         linetype=guide_legend(title=paste("# peptide:", nlevels(sub$PEPTIDE)), 
-            			                               title.theme = element_text(size=13, angle=0),
-            			                               keywidth=0.1,
-            			                               keyheight = 0.1,
-            			                               default.unit = 'inch',
-            			                               ncol=3),
-            			         shape=guide_legend(title=NULL,
-            			                            label.theme = element_text(size=11, angle=0),
-            			                            keywidth=0.1,
-            			                            keyheight = 0.1,
-            			                            default.unit = 'inch'))
+                                                    nrow = 2, order = 2))
             			  
     				} else {
     			        ## 1st plot for original plot
@@ -302,16 +303,16 @@ dataProcessPlots <- function(data=data,
     				            legend.text=element_text(size=legend.size))+
     				        guides(color=guide_legend(title=paste("# peptide:", nlevels(sub$PEPTIDE)), 
     				                                  title.theme = element_text(size=13, angle=0),
-    				                                  keywidth=0.1,
+    				                                  keywidth=0.5,
     				                                  keyheight = 0.1,
     				                                  default.unit = 'inch',
-    				                                  ncol=3), 
+    				                                  ncol=3, order = 1), 
     				               linetype=guide_legend(title=paste("# peptide:", nlevels(sub$PEPTIDE)), 
     				                                     title.theme = element_text(size=13, angle=0),
-    				                                     keywidth=0.1,
+    				                                     keywidth=0.5,
     				                                     keyheight = 0.1,
     				                                     default.unit = 'inch',
-    				                                     ncol=3))
+    				                                     ncol=3, order = 1))
     				    }
             
     					print(ptemp)
