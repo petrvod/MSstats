@@ -327,7 +327,7 @@ dataProcessPlots <- function(data=data,
           		        sub$censored <- factor(sub$censored, levels=c('FALSE', 'TRUE'))
           		    
           		        ptemp <- ggplot(aes_string(x='RUN', y='ABUNDANCE', 
-          		                                   olor='PEPTIDE', linetype='FEATURE'), data=sub) +
+          		                                   color='PEPTIDE', linetype='FEATURE'), data=sub) +
           		            facet_grid(~LABEL) +
           		            geom_line(size=0.5) +
           		            geom_point(aes_string(x='RUN', y='ABUNDANCE', 
