@@ -1,3 +1,38 @@
+CHANGES IN VERSION 3.13.5 [2018-07-30]
+-------------------------
+    BUG FIXES
+	 - MaxQtoMSstatsFormat : 'Leading.razor.protein' in evidence can be used for protein IDs.
+	 - MaxQtoMSstatsFormat : 'Run' column is not required in annotation.
+	 
+CHANGES IN VERSION 3.13.4 [2018-07-02]
+-------------------------
+    UPDATED FEATURES
+	 - designSampleSizeClassification and designSampleSizeClassificationPlots 
+	 - Converter functions check the required column of annootation file.
+
+
+CHANGES IN VERSION 3.13.3 [2018-06-01]
+-------------------------
+    BUG FIXES
+	 - PDtoMSstatsFormat : adjust for different column ids from PD
+
+
+CHANGES IN VERSION 3.13.2 [2018-05-29]
+-------------------------
+    BUG FIXES
+	 - dataProcess : fix some reports.
+	 
+
+CHANGES IN VERSION 3.13.1 [2018-05-21]
+-------------------------
+    BUG FIXES
+	 - dataProcess : report summary of proteins with single feature.
+	 - dataProcess : cluster=NULL is default. There is the issue for makecluster.
+	 - dataProcess : fix the bug for fraction case.
+	 
+    RETIRED FEATURES
+     - transformMSnSetToMSstats, transformMSstatsToMSnSet are retired
+
 CHANGES IN VERSION 3.11.6 [2018-04-23]
 -------------------------
     BUG FIXES
